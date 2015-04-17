@@ -5,8 +5,8 @@
  *      Author: redstar
  */
 
-#ifndef JDEROBOT_COMPONENTS_IMAGEI_H_
-#define JDEROBOT_COMPONENTS_IMAGEI_H_
+#ifndef JDEROBOT_COMPONENTS_CAMERAI_H_
+#define JDEROBOT_COMPONENTS_CAMERAI_H_
 
 #include <IceUtil/IceUtil.h>
 #include <list>
@@ -61,7 +61,7 @@ class CameraI : virtual public jderobot::Camera {
       const Ice::Current& c);
   virtual Ice::Int setCameraDescription(
       const jderobot::CameraDescriptionPtr &description, const Ice::Current& c);
-  void getImageData_async(const jderobot::AMD_ImageProvider_getImageDataPtr& cb,
+  virtual void getImageData_async(const jderobot::AMD_ImageProvider_getImageDataPtr& cb,
                           const Ice::Current& c);
   virtual std::string startCameraStreaming(const Ice::Current&);
   virtual void stopCameraStreaming(const Ice::Current&);
@@ -69,4 +69,4 @@ class CameraI : virtual public jderobot::Camera {
 };
 }
 
-#endif /* JDEROBOT_COMPONENTS_IMAGEI_H_ */
+#endif /* JDEROBOT_COMPONENTS_CAMERAI_H_ */

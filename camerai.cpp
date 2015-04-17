@@ -7,7 +7,7 @@
 
 #include <Ice/Ice.h>
 
-#include "imagei.h"
+#include "camerai.h"
 
 namespace cameraserver {
 

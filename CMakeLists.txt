@@ -1,7 +1,7 @@
 # Source code files
 set(SOURCE_FILES
 	v4l2server.cpp
-	imagei.cpp
+	camerai.cpp
 )
 
   FIND_PATH (LIBV4LCONVERT_INCLUDE_DIR libv4lconvert.h)
